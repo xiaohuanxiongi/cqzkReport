@@ -1,50 +1,12 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="zh-cn">
 <head>
-  <meta charset="utf-8" />
-  <title>生成excel</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>健康上报</title>
 </head>
 <body>
-<input type="button" value="生成表" />
-
-<script type="text/javascript" src="./utils/shim.min.js"></script>
-<script type="text/javascript" src="./utils/xlsx.full.min.js"></script>
-
-<script type="text/javascript">
-  window.onload = (event) => {
-    main()
-  }
-  function main() {
-    const button = document.querySelector("input[type=button]")
-
-    button.onclick = (event) => {
-      const data = [];
-      creatTable(data)
-    }
-  }
-
-  function saveArrayDataToExcel(data) {
-    // create a new blank workbook
-    const workbook = XLSX.utils.book_new()
-
-    const worksheetName = "SheetJS"
-    const worksheetData = [
-      ['title', 'name', 'tagName']
-    ];
-    data.forEach((item) => {
-      worksheetData.push(item)
-    })
-    const worksheet = XLSX.utils.aoa_to_sheet(worksheetData)
-    XLSX.utils.book_append_sheet(workbook, worksheet, worksheetName)
-    XLSX.writeFile(workbook, `点位表${new Date().getTime()}.xlsx`)
-  }
-  function creatTable(data, title = 'tabTitle', name = 'descr', tagName = 'tagName') {
-    const list = [];
-    data.forEach((item) => {
-      list.push([item[title], item[name], item[tagName]]);
-    })
-    saveArrayDataToExcel(list);
-  }
-</script>
 </body>
 </html>
