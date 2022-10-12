@@ -11,7 +11,7 @@
 1.  点击`settings > Secrets`;
 2.  点击`New repository secret`;
 3.  添加4个参数,分别为`QQ`、`EMAIL`、`CQZK`、`REPORTADD`;
-4.  参数分别代表含义与格式：
+4.  参数分别代表含义与格式：<br>
     `QQ`：`接收上报发送邮件的邮箱`;<br>
     `EMAIL`：`邮箱的授权码`；<br>
     `CQZK`：`账号密码信息，格式为：账号&&密码`；<br>
