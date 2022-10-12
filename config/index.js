@@ -1,7 +1,6 @@
 module.exports = {
-  JUEJIN: process.env.JUEJIN || '',
-  TIEBA: process.env.TIEBA || '',
   EMAIL: process.env.EMAIL || '',
-  BILI: process.env.BILI || '',
-  QQ: process.env.QQ || ''
+  QQ: process.env.QQ || '',
+  CQZK: process.env.CQZK || '',
+  REPORTADD: process.env.REPORTADD || ''
 }

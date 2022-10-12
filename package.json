@@ -1,13 +1,10 @@
 {
-  "name": "autocheckin",
-  "version": "1.0.2",
-  "description": "自动签到",
+  "name": "cqzkreport",
+  "version": "1.0.0",
+  "description": "健康上报",
   "main": "./src/index",
   "scripts": {
-    "juejin": "node ./src/juejin",
-    "tieba": "node ./src/tieba",
-    "bili": "node ./src/biliLive",
-    "all": "node ./src/index"
+    "report": "node ./src/cqzk.js"
   },
   "author": "xiaohuanxiong",
   "license": "ISC",
