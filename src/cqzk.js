@@ -10,6 +10,7 @@ if (!CQZK) {
 }
 
 function login () {
+  console.log(`正常运行`);
   service.getCodeService().then((base64) => {
     console.log(base64);
     // const token = 'Basic YWRtaW46MTc0NDQzNzMzMw==';
