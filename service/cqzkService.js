@@ -52,6 +52,11 @@ const parasm = {
     },
     {
       "xmid": "0838d736f15e469da6ade16ad64755bb",
+      "tmid": "5b8cd91cb28f482f84be07ee69a364a8",
+      "sbnrTxt": "否"
+    },
+    {
+      "xmid": "0838d736f15e469da6ade16ad64755bb",
       "tmid": "ae0bf809e4bd492783fe69ea470410cd",
       "sbnrTxt": REPORTADD
     }
